@@ -4,5 +4,5 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   base: "/alfiya-portfolio/",
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
 });
