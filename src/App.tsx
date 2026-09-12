@@ -1,22 +1,24 @@
 const metrics = [
-  { value: '9+', label: 'years across PropTech product operations and customer success' },
+  { value: '8+ years', label: 'across PropTech customer insights, product operations, and customer success' },
   { value: '90+', label: 'product and operational initiatives delivered' },
-  { value: '95%', label: 'on-time execution across planned delivery work' },
+  { value: '95%', label: 'on-time execution across customer and product initiatives' },
   { value: '98%', label: 'customer retention across strategic builder accounts' },
-  { value: '60% to 90%', label: 'CSAT improvement within one year' },
+  { value: '94%', label: 'CSAT achieved through customer success and service improvements' },
+  { value: '50%', label: 'turnaround-time reduction through operational process improvements' },
   { value: '35%-51%', label: 'year-over-year revenue growth contribution' },
 ];
 
 const timeline = [
   {
     period: 'Jul 2024 - Present',
-    role: 'Customer Insights & Product Operations Lead',
-    company: 'REA India (Housing.com)',
+    role: 'Customer Insights Manager',
+    company: 'Housing.com',
     location: 'Chennai, India',
     points: [
-      'Leads regional rollout and execution of product features across Chennai, Coimbatore, and Tier-II markets with a 30-40 member team.',
-      'Partners with Product and Engineering teams to triage customer feedback, prioritize Jira backlog tickets, and support 95% on-time sprint delivery.',
-      'Directs client operations across 120+ strategic builder accounts, supporting 98% retention and 35%-51% YoY revenue growth.',
+      'Manages a portfolio of 120+ builders, developers, and broker accounts across Chennai, Coimbatore, and Tier-II markets.',
+      'Works closely with Product and Engineering teams to convert customer feedback into product enhancements and better user experiences.',
+      'Improved CSAT to 94%, achieved 98% customer retention, contributed to 35%-51% YoY regional revenue growth, and reduced turnaround time by 50%.',
+      'Uses SQL, Databricks, dashboards, and AI tools to analyze customer behavior and improve campaign performance.',
     ],
   },
   {
@@ -26,8 +28,9 @@ const timeline = [
     location: 'Noida, India',
     points: [
       'Delivered 70+ product and customer experience initiatives with 95% on-time completion.',
-      'Collaborated with Engineering, UX, Sales, and Marketing teams to streamline product operations and customer feedback loops.',
       'Implemented proactive engagement strategies that increased account retention by 35%.',
+      'Worked with Product, Engineering, and Sales teams to improve onboarding and the overall customer experience.',
+      'Prepared customer performance reports and adoption insights that supported product improvements.',
     ],
   },
   {
@@ -92,19 +95,19 @@ const caseStudies = [
 const skillGroups = [
   {
     title: 'Product & Delivery',
-    skills: ['Product Operations', 'Agile/Scrum', 'Sprint Planning', 'Jira', 'Confluence', 'PRD Requirements', 'GTM Rollouts'],
+    skills: ['Product Operations', 'Product & Project Management', 'Agile/Scrum', 'Sprint Planning', 'Jira', 'Confluence', 'GTM Rollouts'],
   },
   {
     title: 'Customer Success',
-    skills: ['Customer Lifecycle Management', 'Strategic Account Management', 'Customer Retention', 'Product Adoption', 'QBR / EBR', 'Customer Experience'],
+    skills: ['Customer Insights', 'Customer Lifecycle Management', 'Strategic Account Management', 'Customer Retention', 'Product Adoption', 'QBR / EBR'],
   },
   {
     title: 'AI & Analytics',
-    skills: ['Voice of Customer', 'Generative AI', 'ChatGPT', 'Google Gemini', 'Claude', 'SQL', 'Databricks', 'Power BI', 'Tableau'],
+    skills: ['Voice of Customer', 'Generative AI', 'AI Tools', 'SQL', 'Databricks', 'Dashboards', 'Power BI', 'Tableau'],
   },
   {
     title: 'Operations Tools',
-    skills: ['Salesforce', 'Zoho CRM', 'Freshdesk', 'LeadSquared', 'Jenkins', 'Zapier', 'Microsoft Excel'],
+    skills: ['SaaS', 'Revenue Growth', 'Salesforce', 'Zoho CRM', 'Freshdesk', 'LeadSquared', 'Jenkins', 'Microsoft Excel'],
   },
 ];
 
@@ -145,15 +148,15 @@ function App() {
           <div id="top" className="grid flex-1 items-center gap-12 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
             <div>
               <p className="mb-5 text-sm font-semibold uppercase tracking-[0.35em] text-teal-light">
-                Customer Insights | Product Operations | Agile Delivery
+                Customer Insights | Product Operations | Customer Success | AI | SaaS
               </p>
               <h1 className="max-w-4xl text-5xl font-semibold tracking-tight text-balance sm:text-6xl lg:text-7xl">
-                Alfiya Zumana turns customer signals into product and growth outcomes.
+                Alfiya Zumana connects customer insight with product, revenue, and operational growth.
               </h1>
               <p className="mt-7 max-w-2xl text-lg leading-8 text-ivory/78">
-                Product Operations and Customer Success leader with 9+ years across REA India,
-                Magicbricks, and Info Edge, specializing in AI-enabled VoC, GTM execution,
-                stakeholder alignment, and data-driven campaign performance.
+                Customer Insights Manager with 8+ years across Housing.com, Magicbricks, and
+                Info Edge, specializing in customer success, product operations, product and
+                project management, revenue growth, AI, and SaaS-led campaign performance.
               </p>
               <div className="mt-9 flex flex-col gap-4 sm:flex-row">
                 <a
@@ -175,11 +178,11 @@ function App() {
             <div className="rounded-[2rem] border border-ivory/12 bg-ivory/8 p-6 shadow-2xl backdrop-blur">
               <div className="rounded-[1.5rem] border border-teal-light/30 bg-navy/70 p-7">
                 <p className="text-sm uppercase tracking-[0.28em] text-teal-light">Current Focus</p>
-                <h2 className="mt-4 text-2xl font-semibold text-ivory">Customer Insights Manager at REA India</h2>
+                <h2 className="mt-4 text-2xl font-semibold text-ivory">Customer Insights Manager at Housing.com</h2>
                 <p className="mt-4 text-ivory/75">
-                  Leading regional customer success and product operations across Chennai,
-                  Coimbatore, and Tier-II markets while partnering with Product, Engineering,
-                  Sales, Marketing, and Business teams.
+                  Managing customer success and product operations across Chennai, Coimbatore,
+                  and Tier-II markets while partnering with Product, Engineering, Sales,
+                  Marketing, and Business teams.
                 </p>
                 <dl className="mt-8 grid grid-cols-2 gap-4">
                   <div className="rounded-2xl bg-ivory/10 p-4">
@@ -204,8 +207,8 @@ function App() {
             <h2 id="impact-heading" className="section-heading">Measured outcomes across product, delivery, and customer success.</h2>
           </div>
           <p className="max-w-xl text-base leading-7 text-slate">
-            Metrics are sourced from Alfiya's resumes and reflect her product operations,
-            customer success, and campaign delivery experience.
+            Metrics reflect Alfiya's LinkedIn profile and her work across customer insights,
+            product operations, customer success, and campaign performance.
           </p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -226,15 +229,17 @@ function App() {
           </div>
           <div className="space-y-6 text-lg leading-8 text-slate">
             <p>
-              Alfiya is a cross-functional Product Operations, Customer Success, and Business
-              Growth professional with 9+ years in PropTech organizations including REA India
-              (Housing.com), Times Internet (Magicbricks), and Info Edge (99acres.com).
+              Alfiya is a Customer Insights Manager and cross-functional Product Operations,
+              Customer Success, Product and Project Management, Revenue Growth, AI, and SaaS
+              professional with 8+ years in PropTech organizations including Housing.com,
+              Magicbricks, and Info Edge.
             </p>
             <p>
-              Her work connects customer insight, Agile delivery, campaign operations, and
-              executive reporting. She partners across Product, Engineering, Sales, Marketing,
-              and Business teams to improve adoption, lead quality, campaign performance, and
-              retention.
+              Her work connects customer behavior analysis, AI-enabled Voice of Customer,
+              dashboards, onboarding, QBRs, campaign operations, and executive reporting. She
+              partners across Product, Engineering, Sales, Marketing, and Business teams to
+              improve adoption, product feedback loops, customer experience, retention, and
+              revenue outcomes.
             </p>
           </div>
         </div>
@@ -242,7 +247,7 @@ function App() {
 
       <section id="work" aria-labelledby="timeline-heading" className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12">
         <p className="section-kicker">Professional Timeline</p>
-        <h2 id="timeline-heading" className="section-heading max-w-3xl">From quality operations to customer insights and product delivery leadership.</h2>
+        <h2 id="timeline-heading" className="section-heading max-w-3xl">From quality operations to customer insights, SaaS growth, and product operations leadership.</h2>
         <div className="mt-12 space-y-6">
           {timeline.map((item) => (
             <article key={`${item.company}-${item.period}`} className="card grid gap-6 lg:grid-cols-[0.35fr_0.65fr]">
@@ -300,7 +305,7 @@ function App() {
         <div className="grid gap-10 lg:grid-cols-[0.35fr_0.65fr]">
           <div>
             <p className="section-kicker">Skills</p>
-            <h2 id="skills-heading" className="section-heading">A toolkit spanning insight, execution, and business growth.</h2>
+            <h2 id="skills-heading" className="section-heading">A toolkit spanning insight, execution, SaaS operations, and business growth.</h2>
           </div>
           <div className="grid gap-5 sm:grid-cols-2">
             {skillGroups.map((group) => (
@@ -352,7 +357,7 @@ function App() {
         <div className="rounded-[2rem] bg-navy p-8 text-ivory shadow-2xl sm:p-12 lg:p-16">
           <p className="section-kicker text-teal-light">Contact</p>
           <h2 id="contact-heading" className="max-w-3xl text-4xl font-semibold tracking-tight sm:text-5xl">
-            Open to product operations, customer success, and AI-enabled customer insights conversations.
+            Open to customer insights, product operations, customer success, AI, SaaS, and revenue growth conversations.
           </h2>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <a className="contact-link" href="mailto:alfiyazumana1989@gmail.com">Email</a>
