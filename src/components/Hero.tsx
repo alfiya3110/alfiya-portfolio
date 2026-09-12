@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { currentFocus, profile } from '../data/profile';
+import { profile, transitionFocus } from '../data/profile';
 
 const resumeUrl = `${import.meta.env.BASE_URL}${profile.resumeFileName}`;
 
@@ -68,47 +68,41 @@ export default function Hero() {
               <div className="rounded-[1.85rem] bg-navy/80 p-7 sm:p-8">
                 <div className="flex items-center justify-between gap-4">
                   <p className="text-xs font-semibold uppercase tracking-[0.24em] text-teal-light">
-                    Current Focus
+                    {transitionFocus.label}
                   </p>
                   <span className="rounded-full bg-teal/15 px-3 py-1 text-xs font-medium text-teal-light">
-                    Active
+                    {transitionFocus.status}
                   </span>
                 </div>
 
                 <h2 className="mt-5 text-xl font-semibold leading-snug text-ivory sm:text-2xl">
-                  {currentFocus.role}
+                  {transitionFocus.title}
                 </h2>
 
                 <p className="mt-4 text-sm leading-7 text-ivory/65 sm:text-base">
-                  {currentFocus.description}
+                  {transitionFocus.description}
                 </p>
 
-                <dl className="mt-8 grid grid-cols-2 gap-3">
-                  <div className="rounded-xl border border-ivory/8 bg-ivory/5 p-4">
-                    <dt className="text-xs uppercase tracking-wider text-ivory/45">Markets</dt>
-                    <dd className="mt-2 text-sm font-semibold text-ivory">{currentFocus.markets}</dd>
+                <dl className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  <div className="rounded-xl border border-ivory/8 bg-ivory/5 p-4 sm:col-span-2">
+                    <dt className="text-xs uppercase tracking-wider text-ivory/45">Target Roles</dt>
+                    <dd className="mt-2 text-sm font-semibold text-ivory">{transitionFocus.targetRoles}</dd>
                   </div>
-                  <div className="rounded-xl border border-ivory/8 bg-ivory/5 p-4">
-                    <dt className="text-xs uppercase tracking-wider text-ivory/45">Portfolio</dt>
-                    <dd className="mt-2 text-sm font-semibold text-ivory">{currentFocus.portfolio}</dd>
+                  <div className="rounded-xl border border-ivory/8 bg-ivory/5 p-4 sm:col-span-2">
+                    <dt className="text-xs uppercase tracking-wider text-ivory/45">Domains</dt>
+                    <dd className="mt-2 text-sm font-semibold text-ivory">{transitionFocus.domains}</dd>
                   </div>
                 </dl>
 
                 <div className="mt-6 border-t border-ivory/10 pt-5">
-                  <p className="text-xs text-ivory/40">Key outcomes at Housing.com</p>
+                  <p className="text-xs text-ivory/40">Transition strengths</p>
                   <div className="mt-3 flex flex-wrap gap-4">
-                    <div>
-                      <p className="text-2xl font-bold text-teal-light">94%</p>
-                      <p className="text-xs text-ivory/50">CSAT</p>
-                    </div>
-                    <div>
-                      <p className="text-2xl font-bold text-teal-light">98%</p>
-                      <p className="text-xs text-ivory/50">Retention</p>
-                    </div>
-                    <div>
-                      <p className="text-2xl font-bold text-teal-light">120+</p>
-                      <p className="text-xs text-ivory/50">Accounts</p>
-                    </div>
+                    {transitionFocus.strengths.map((item) => (
+                      <div key={item.label}>
+                        <p className="text-2xl font-bold text-teal-light">{item.value}</p>
+                        <p className="text-xs text-ivory/50">{item.label}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>

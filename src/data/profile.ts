@@ -33,12 +33,19 @@ export const navLinks = [
   { label: 'Contact', path: '/contact' },
 ];
 
-export const currentFocus = {
-  role: 'Customer Insights Manager at Housing.com',
+export const transitionFocus = {
+  label: 'Career Transition',
+  status: 'Open to Opportunities',
+  title: 'Business Analyst & Product Owner',
   description:
-    'Analyzing customer and business data across Chennai, Coimbatore, and Tier-II markets while partnering with Product, Engineering, Sales, Marketing, and Business teams to translate insights into product and operational improvements.',
-  markets: 'Chennai + Tier-II',
-  portfolio: '120+ accounts',
+    'Building on 8+ years in PropTech to move into roles focused on requirements gathering, data analytics, product discovery, backlog prioritization, and measurable delivery outcomes.',
+  targetRoles: 'BA (Data Analytics) · Product Owner',
+  domains: 'PropTech · SaaS · Digital Products',
+  strengths: [
+    { value: '8+ yrs', label: 'Cross-functional experience' },
+    { value: 'SQL', label: 'Dashboards & analytics' },
+    { value: 'Agile', label: 'Jira & delivery' },
+  ],
 };
 
 export const metricGroups = [
