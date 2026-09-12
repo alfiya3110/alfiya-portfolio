@@ -50,11 +50,14 @@ export const transitionFocus = {
 
 export const metricGroups = [
   {
-    title: 'Analytics & Data',
+    title: 'Business Outcomes',
     metrics: [
-      { value: 'SQL', label: 'Databricks, dashboards, and AI tools used for customer behavior analysis' },
-      { value: 'Power BI', label: 'Scorecards built to track SLA adherence, engagement, and product performance' },
-      { value: '15%', label: 'improvement in lead delivery and reporting accuracy at Info Edge' },
+      { value: '35%-51%', label: 'year-over-year regional revenue growth contribution at Housing.com' },
+      { value: '98%', label: 'customer retention across strategic builder accounts' },
+      { value: '94%', label: 'CSAT achieved through service and product experience improvements' },
+      { value: '35%', label: 'account retention improvement through adoption and engagement insights' },
+      { value: '25% / 20%', label: 'new client acquisition improvement and churn reduction at 99acres' },
+      { value: '120+', label: 'builder, developer, and broker accounts managed at Housing.com' },
     ],
   },
   {
@@ -66,14 +69,11 @@ export const metricGroups = [
     ],
   },
   {
-    title: 'Business Outcomes',
+    title: 'Analytics & Data',
     metrics: [
-      { value: '35%-51%', label: 'year-over-year regional revenue growth contribution at Housing.com' },
-      { value: '98%', label: 'customer retention across strategic builder accounts' },
-      { value: '94%', label: 'CSAT achieved through service and product experience improvements' },
-      { value: '35%', label: 'account retention improvement through adoption and engagement insights' },
-      { value: '25% / 20%', label: 'new client acquisition improvement and churn reduction at 99acres' },
-      { value: '120+', label: 'builder, developer, and broker accounts managed at Housing.com' },
+      { value: 'SQL', label: 'Databricks, dashboards, and AI tools used for customer behavior analysis' },
+      { value: 'Power BI', label: 'Scorecards built to track SLA adherence, engagement, and product performance' },
+      { value: '15%', label: 'improvement in lead delivery and reporting accuracy at Info Edge' },
     ],
   },
 ];
