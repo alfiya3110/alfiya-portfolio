@@ -26,7 +26,7 @@ export default function Skills({ standalone = false }: SkillsProps) {
               {group.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded-full border border-teal/20 bg-teal/10 px-3 py-2 text-sm font-medium text-teal-dark"
+                  className="rounded-full border border-teal/25 bg-gradient-to-r from-teal/10 to-gold/5 px-3 py-2 text-sm font-medium text-teal-dark"
                 >
                   {skill}
                 </span>

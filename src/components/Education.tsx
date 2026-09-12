@@ -21,7 +21,7 @@ export default function Education({ standalone = false }: EducationProps) {
               <article key={item.degree} className="card">
                 <h3 className="text-xl font-semibold text-navy">{item.degree}</h3>
                 <p className="mt-2 text-slate">{item.school}</p>
-                <p className="mt-1 text-sm font-medium text-teal-dark">{item.period}</p>
+                <p className="mt-1 text-sm font-medium text-gold">{item.period}</p>
               </article>
             ))}
           </div>
@@ -33,7 +33,7 @@ export default function Education({ standalone = false }: EducationProps) {
               <article key={certification.name} className="card">
                 <h3 className="text-lg font-semibold text-navy">{certification.name}</h3>
                 <p className="mt-2 text-slate">{certification.issuer}</p>
-                <p className="mt-1 text-sm font-medium text-teal-dark">Issued {certification.issued}</p>
+                <p className="mt-1 text-sm font-medium text-gold">Issued {certification.issued}</p>
               </article>
             ))}
           </div>

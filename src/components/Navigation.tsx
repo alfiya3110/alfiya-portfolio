@@ -4,7 +4,7 @@ import Logo from './Logo';
 
 export default function Navigation() {
   return (
-    <nav className="sticky top-0 z-50 border-b border-ivory/10 bg-navy/95 backdrop-blur" aria-label="Primary navigation">
+    <nav className="sticky top-0 z-50 border-b border-teal/20 bg-navy/95 backdrop-blur" aria-label="Primary navigation">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4 sm:px-10 lg:px-12">
         <NavLink
           to="/"
@@ -23,7 +23,7 @@ export default function Navigation() {
               to={link.path}
               end={link.path === '/'}
               className={({ isActive }) =>
-                `transition ${isActive ? 'font-semibold text-teal-light' : 'text-ivory/80 hover:text-teal-light'}`
+                `transition ${isActive ? 'font-semibold text-gold-light' : 'text-ivory/80 hover:text-teal-light'}`
               }
             >
               {link.label}

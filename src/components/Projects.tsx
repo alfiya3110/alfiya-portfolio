@@ -13,7 +13,7 @@ function CaseStudySection({
 }) {
   return (
     <>
-      <p className="mt-6 text-sm font-bold uppercase tracking-[0.2em] text-teal-dark">{label}</p>
+      <p className="mt-6 text-sm font-bold uppercase tracking-[0.2em] text-gold">{label}</p>
       <ul className="mt-3 space-y-3 text-slate">
         {items.map((item) => (
           <li key={item} className="flex gap-3">
@@ -44,14 +44,14 @@ export default function Projects({ standalone = false }: ProjectsProps) {
         {caseStudies.map((study) => (
           <article key={study.title} className="card lg:col-span-2">
             <h3 className="text-2xl font-semibold text-navy">{study.title}</h3>
-            <p className="mt-5 text-sm font-bold uppercase tracking-[0.2em] text-teal-dark">Business Problem</p>
+            <p className="mt-5 text-sm font-bold uppercase tracking-[0.2em] text-gold">Business Problem</p>
             <p className="mt-3 leading-7 text-slate">{study.businessProblem}</p>
             <CaseStudySection label="Business Analysis" items={study.baWork} />
             {study.analyticsWork && (
               <CaseStudySection label="Data & Analytics" items={study.analyticsWork} />
             )}
             {study.poWork && <CaseStudySection label="Product Ownership" items={study.poWork} />}
-            <p className="mt-6 text-sm font-bold uppercase tracking-[0.2em] text-teal-dark">Outcome</p>
+            <p className="mt-6 text-sm font-bold uppercase tracking-[0.2em] text-gold">Outcome</p>
             <p className="mt-3 leading-7 text-slate">{study.outcome}</p>
           </article>
         ))}

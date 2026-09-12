@@ -7,8 +7,8 @@ export default function Hero() {
   return (
     <section className="hero-section relative overflow-hidden text-ivory">
       <div className="hero-mesh pointer-events-none absolute inset-0" aria-hidden="true" />
-      <div className="hero-glow pointer-events-none absolute -right-20 top-0 h-[28rem] w-[28rem] rounded-full bg-teal/25 blur-3xl" aria-hidden="true" />
-      <div className="hero-glow pointer-events-none absolute -left-20 bottom-0 h-72 w-72 rounded-full bg-teal-dark/20 blur-3xl" aria-hidden="true" />
+      <div className="hero-glow pointer-events-none absolute -right-20 top-0 h-[28rem] w-[28rem] rounded-full bg-teal/30 blur-3xl" aria-hidden="true" />
+      <div className="hero-glow pointer-events-none absolute -left-20 bottom-0 h-72 w-72 rounded-full bg-gold/20 blur-3xl" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-7xl px-6 pb-20 pt-12 sm:px-10 sm:pb-24 sm:pt-16 lg:px-12 lg:pb-28">
         <div className="mb-10 flex flex-wrap items-center gap-3">
@@ -21,10 +21,12 @@ export default function Hero() {
 
         <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-start lg:gap-16">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-teal-light/70">Portfolio</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold-light">Portfolio</p>
             <h1 className="mt-4 text-[clamp(2.25rem,6vw,5rem)] font-bold leading-tight tracking-tight">
               {profile.name.split(' ')[0]}{' '}
-              <span className="text-teal-light">{profile.name.split(' ').slice(1).join(' ')}</span>
+              <span className="bg-gradient-to-r from-teal-light to-gold-light bg-clip-text text-transparent">
+                {profile.name.split(' ').slice(1).join(' ')}
+              </span>
             </h1>
 
             <p className="mt-8 max-w-2xl text-2xl font-light leading-snug text-ivory/90 sm:text-[1.75rem]">

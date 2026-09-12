@@ -22,7 +22,7 @@ export default function Metrics({ standalone = false }: MetricsProps) {
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {group.metrics.map((metric) => (
                 <article key={metric.label} className="card">
-                  <p className="text-3xl font-bold text-teal-dark">{metric.value}</p>
+                  <p className="text-3xl font-bold text-gold">{metric.value}</p>
                   <p className="mt-3 text-sm leading-6 text-slate">{metric.label}</p>
                 </article>
               ))}

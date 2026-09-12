@@ -20,15 +20,15 @@ export default function Logo({ className = '', size = 40 }: LogoProps) {
     >
       <defs>
         <linearGradient id={gradientId} x1="4" y1="4" x2="36" y2="36" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#79b8b4" />
-          <stop stopColor="#a7d8d3" />
+          <stop stopColor="#1a9b8e" />
+          <stop stopColor="#e4b045" />
         </linearGradient>
       </defs>
-      <rect x="1" y="1" width="38" height="38" rx="11" fill="#0d1b2a" stroke={`url(#${gradientId})`} strokeWidth="1.5" />
+      <rect x="1" y="1" width="38" height="38" rx="11" fill="#141f38" stroke={`url(#${gradientId})`} strokeWidth="1.5" />
       <text
         x="11"
         y="27"
-        fill="#f8f3e7"
+        fill="#fefcf9"
         fontFamily="Inter, ui-sans-serif, system-ui, sans-serif"
         fontSize="16"
         fontWeight="700"
@@ -38,7 +38,7 @@ export default function Logo({ className = '', size = 40 }: LogoProps) {
       <text
         x="23"
         y="27"
-        fill="#a7d8d3"
+        fill="#4ecdc4"
         fontFamily="Inter, ui-sans-serif, system-ui, sans-serif"
         fontSize="16"
         fontWeight="700"

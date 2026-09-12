@@ -22,12 +22,12 @@ export default function Experience({ standalone = false }: ExperienceProps) {
         {experience.map((item) => (
           <article key={`${item.company}-${item.period}`} className="card grid gap-6 lg:grid-cols-[0.35fr_0.65fr]">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-dark">{item.period}</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">{item.period}</p>
               <p className="mt-3 text-sm text-slate">{item.location}</p>
             </div>
             <div>
               <h3 className="text-2xl font-semibold text-navy">{item.role}</h3>
-              <p className="mt-1 font-medium text-teal-dark">{item.company}</p>
+              <p className="mt-1 font-medium text-teal">{item.company}</p>
               {'summary' in item && item.summary && (
                 <p className="mt-3 text-sm italic leading-6 text-slate">{item.summary}</p>
               )}
