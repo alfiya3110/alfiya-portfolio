@@ -1,13 +1,25 @@
 import { experience } from '../data/profile';
 
-export default function Experience() {
+type ExperienceProps = {
+  standalone?: boolean;
+};
+
+export default function Experience({ standalone = false }: ExperienceProps) {
   return (
-    <section id="experience" aria-labelledby="timeline-heading" className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12">
-      <p className="section-kicker">Experience</p>
-      <h2 id="timeline-heading" className="section-heading max-w-3xl">
-        From quality operations to customer insights, SaaS growth, and product operations leadership.
-      </h2>
-      <div className="mt-12 space-y-6">
+    <section
+      id={standalone ? undefined : 'experience'}
+      aria-labelledby={standalone ? undefined : 'timeline-heading'}
+      className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12"
+    >
+      {!standalone && (
+        <>
+          <p className="section-kicker">Experience</p>
+          <h2 id="timeline-heading" className="section-heading max-w-3xl">
+            From quality operations to customer insights, SaaS growth, and product operations leadership.
+          </h2>
+        </>
+      )}
+      <div className={standalone ? 'space-y-6' : 'mt-12 space-y-6'}>
         {experience.map((item) => (
           <article key={`${item.company}-${item.period}`} className="card grid gap-6 lg:grid-cols-[0.35fr_0.65fr]">
             <div>

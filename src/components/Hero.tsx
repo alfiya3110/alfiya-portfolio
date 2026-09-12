@@ -1,4 +1,5 @@
-import { currentFocus, navLinks, profile } from '../data/profile';
+import { Link } from 'react-router-dom';
+import { currentFocus, profile } from '../data/profile';
 
 const resumeUrl = `${import.meta.env.BASE_URL}${profile.resumeFileName}`;
 
@@ -6,21 +7,8 @@ export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-navy text-ivory">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(92,156,154,0.32),_transparent_34rem)]" />
-      <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col px-6 py-8 sm:px-10 lg:px-12">
-        <nav className="flex items-center justify-between gap-6" aria-label="Primary navigation">
-          <a href="#top" className="text-sm font-semibold tracking-[0.35em] text-teal-light">
-            {profile.initials}
-          </a>
-          <div className="hidden items-center gap-6 text-sm text-ivory/80 md:flex">
-            {navLinks.map((link) => (
-              <a key={link.href} href={link.href} className="transition hover:text-teal-light">
-                {link.label}
-              </a>
-            ))}
-          </div>
-        </nav>
-
-        <div id="top" className="grid flex-1 items-center gap-12 py-20 lg:grid-cols-[1.1fr_0.9fr] lg:py-24">
+      <div className="relative mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-12 lg:py-24">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <p className="mb-5 text-sm font-semibold uppercase tracking-[0.35em] text-teal-light">
               {profile.headline}
@@ -38,12 +26,12 @@ export default function Hero() {
               >
                 Download Resume
               </a>
-              <a
-                href="#projects"
+              <Link
+                to="/projects"
                 className="inline-flex items-center justify-center rounded-full border border-ivory/30 px-6 py-3 text-sm font-bold text-ivory transition hover:border-teal-light hover:text-teal-light focus:outline-none focus:ring-2 focus:ring-teal-light focus:ring-offset-2 focus:ring-offset-navy"
               >
                 View Projects
-              </a>
+              </Link>
             </div>
           </div>
 

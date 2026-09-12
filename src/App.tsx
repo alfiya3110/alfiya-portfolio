@@ -1,24 +1,27 @@
-import About from './components/About';
-import Contact from './components/Contact';
-import Education from './components/Education';
-import Experience from './components/Experience';
-import Hero from './components/Hero';
-import Metrics from './components/Metrics';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
+import { Navigate, Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import EducationPage from './pages/EducationPage';
+import ExperiencePage from './pages/ExperiencePage';
+import HomePage from './pages/HomePage';
+import ProjectsPage from './pages/ProjectsPage';
+import SkillsPage from './pages/SkillsPage';
 
 function App() {
   return (
-    <main className="min-h-screen bg-ivory text-navy">
-      <Hero />
-      <Metrics />
-      <About />
-      <Experience />
-      <Projects />
-      <Skills />
-      <Education />
-      <Contact />
-    </main>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route path="about" element={<AboutPage />} />
+        <Route path="experience" element={<ExperiencePage />} />
+        <Route path="projects" element={<ProjectsPage />} />
+        <Route path="skills" element={<SkillsPage />} />
+        <Route path="education" element={<EducationPage />} />
+        <Route path="contact" element={<ContactPage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Route>
+    </Routes>
   );
 }
 

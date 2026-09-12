@@ -1,14 +1,26 @@
 import { projects } from '../data/profile';
 
-export default function Projects() {
+type ProjectsProps = {
+  standalone?: boolean;
+};
+
+export default function Projects({ standalone = false }: ProjectsProps) {
   return (
-    <section id="projects" aria-labelledby="projects-heading" className="bg-navy px-6 py-20 text-ivory sm:px-10 lg:px-12">
+    <section
+      id={standalone ? undefined : 'projects'}
+      aria-labelledby={standalone ? undefined : 'projects-heading'}
+      className={`px-6 py-20 sm:px-10 lg:px-12 ${standalone ? 'bg-navy text-ivory' : 'bg-navy text-ivory'}`}
+    >
       <div className="mx-auto max-w-7xl">
-        <p className="section-kicker text-teal-light">Featured Projects</p>
-        <h2 id="projects-heading" className="max-w-3xl text-4xl font-semibold tracking-tight sm:text-5xl">
-          Practical AI concepts for converting customer conversations into operating intelligence.
-        </h2>
-        <div className="mt-12 grid gap-6 lg:grid-cols-2">
+        {!standalone && (
+          <>
+            <p className="section-kicker text-teal-light">Featured Projects</p>
+            <h2 id="projects-heading" className="max-w-3xl text-4xl font-semibold tracking-tight sm:text-5xl">
+              Practical AI concepts for converting customer conversations into operating intelligence.
+            </h2>
+          </>
+        )}
+        <div className={standalone ? 'grid gap-6 lg:grid-cols-2' : 'mt-12 grid gap-6 lg:grid-cols-2'}>
           {projects.map((project) => (
             <article key={project.title} className="rounded-[2rem] border border-ivory/12 bg-ivory/8 p-7 shadow-xl">
               <h3 className="text-2xl font-semibold">{project.title}</h3>

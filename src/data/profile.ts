@@ -15,11 +15,13 @@ export const profile = {
 };
 
 export const navLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', path: '/' },
+  { label: 'About', path: '/about' },
+  { label: 'Experience', path: '/experience' },
+  { label: 'Projects', path: '/projects' },
+  { label: 'Skills', path: '/skills' },
+  { label: 'Education', path: '/education' },
+  { label: 'Contact', path: '/contact' },
 ];
 
 export const currentFocus = {
