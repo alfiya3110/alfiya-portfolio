@@ -1,11 +1,19 @@
 export const profile = {
   name: 'Alfiya Zumana',
   initials: 'AZ',
+  roleTitle: 'Customer Insights Manager',
   location: 'Chennai, Tamil Nadu, India',
-  headline:
-    'Customer Insights | Product Operations | Customer Success | Product & Project Management | Revenue Growth | AI | SaaS',
-  tagline:
-    'Alfiya Zumana connects customer insight with product, revenue, and operational growth.',
+  valueProposition:
+    'Connecting customer insight with product, revenue, and operational growth.',
+  skillTags: [
+    'Customer Insights',
+    'Product Operations',
+    'Customer Success',
+    'Product & Project Management',
+    'Revenue Growth',
+    'AI',
+    'SaaS',
+  ],
   summary:
     'Customer Insights Manager with 8+ years across Housing.com, Magicbricks, and Info Edge, specializing in customer success, product operations, product and project management, revenue growth, AI, and SaaS-led campaign performance.',
   linkedinUrl: 'https://www.linkedin.com/in/zumana-zumana',

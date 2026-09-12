@@ -47,3 +47,15 @@ a {
 .contact-link {
   @apply rounded-2xl border border-ivory/15 bg-ivory/8 px-5 py-4 text-center font-semibold text-ivory transition hover:border-teal-light hover:text-teal-light focus:outline-none focus:ring-2 focus:ring-teal-light focus:ring-offset-2 focus:ring-offset-navy;
 }
+
+.hero-section {
+  background: linear-gradient(165deg, #0d1b2a 0%, #0f2235 45%, #0d1b2a 100%);
+}
+
+.hero-mesh {
+  background-image:
+    linear-gradient(rgba(121, 184, 180, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(121, 184, 180, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 20%, transparent 75%);
+}
