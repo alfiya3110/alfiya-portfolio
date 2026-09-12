@@ -5,10 +5,10 @@ const resumeUrl = `${import.meta.env.BASE_URL}${profile.resumeFileName}`;
 
 export default function Hero() {
   return (
-    <section className="hero-section relative overflow-hidden text-ivory">
+    <section className="hero-section page-header relative overflow-hidden border-b border-ivory/10 text-ivory">
       <div className="hero-mesh pointer-events-none absolute inset-0" aria-hidden="true" />
-      <div className="hero-glow pointer-events-none absolute -right-20 top-0 h-[28rem] w-[28rem] rounded-full bg-teal/30 blur-3xl" aria-hidden="true" />
-      <div className="hero-glow pointer-events-none absolute -left-20 bottom-0 h-72 w-72 rounded-full bg-gold/20 blur-3xl" aria-hidden="true" />
+      <div className="hero-glow pointer-events-none absolute -top-16 right-0 h-64 w-64 rounded-full bg-teal/20 blur-3xl" aria-hidden="true" />
+      <div className="hero-glow pointer-events-none absolute bottom-0 left-0 h-48 w-48 rounded-full bg-gold/15 blur-3xl" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-7xl px-6 pb-20 pt-12 sm:px-10 sm:pb-24 sm:pt-16 lg:px-12 lg:pb-28">
         <div className="mb-10 flex flex-wrap items-center gap-3">
@@ -21,7 +21,7 @@ export default function Hero() {
 
         <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-start lg:gap-16">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-gold-light">Portfolio</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold-light">Portfolio</p>
             <h1 className="mt-4 text-[clamp(2.25rem,6vw,5rem)] font-bold leading-tight tracking-tight">
               {profile.name.split(' ')[0]}{' '}
               <span className="bg-gradient-to-r from-teal-light to-gold-light bg-clip-text text-transparent">
@@ -60,10 +60,10 @@ export default function Hero() {
 
           <aside className="home-transition-card">
             <div className="flex items-center justify-between gap-3">
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-teal-light">
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-gold-light">
                 {transitionFocus.label}
               </p>
-              <span className="rounded-full bg-teal/20 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-wider text-teal-light">
+              <span className="rounded-full border border-gold-light/25 bg-gold/10 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-wider text-gold-light">
                 {transitionFocus.status}
               </span>
             </div>
@@ -89,7 +89,7 @@ export default function Hero() {
             <div className="mt-8 grid grid-cols-3 gap-3 border-t border-ivory/10 pt-6">
               {transitionFocus.strengths.map((item) => (
                 <div key={item.label} className="text-center sm:text-left">
-                  <p className="text-xl font-bold text-teal-light sm:text-2xl">{item.value}</p>
+                  <p className="text-xl font-bold text-gold sm:text-2xl">{item.value}</p>
                   <p className="mt-1 text-[0.65rem] leading-4 text-ivory/45 sm:text-xs">{item.label}</p>
                 </div>
               ))}
@@ -98,7 +98,6 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="home-hero-fade pointer-events-none absolute inset-x-0 bottom-0 h-24" aria-hidden="true" />
     </section>
   );
 }

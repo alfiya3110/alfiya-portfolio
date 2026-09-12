@@ -91,7 +91,7 @@ a {
 }
 
 .home-transition-card {
-  @apply rounded-3xl border border-teal-light/20 bg-gradient-to-br from-teal/10 via-navy-light/40 to-navy/80 p-7 shadow-2xl backdrop-blur-md sm:p-8;
+  @apply rounded-3xl border border-teal/30 bg-gradient-to-br from-teal/15 via-gold/8 to-navy/90 p-7 shadow-2xl backdrop-blur-md sm:p-8;
 }
 
 .home-transition-row {
@@ -104,10 +104,6 @@ a {
 
 .home-transition-value {
   @apply mt-1 block text-sm font-semibold text-ivory;
-}
-
-.home-hero-fade {
-  background: linear-gradient(to bottom, transparent, var(--color-ivory));
 }
 
 .home-about-section {
