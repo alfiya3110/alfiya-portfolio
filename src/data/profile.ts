@@ -16,7 +16,7 @@ export const profile = {
     'AI-Enabled Discovery',
   ],
   summary:
-    'Professional with 8+ years across Housing.com, Magicbricks, and Info Edge, translating business problems into requirements, dashboards, and delivery outcomes across PropTech and SaaS platforms.',
+    'Professional with 9+ years across Housing.com, Magicbricks, and Info Edge, translating business problems into requirements, dashboards, and delivery outcomes across PropTech and SaaS platforms.',
   linkedinUrl: 'https://www.linkedin.com/in/zumana-zumana',
   email: 'alfiyazumana1989@gmail.com',
   phone: '+919360306954',
@@ -38,11 +38,11 @@ export const transitionFocus = {
   status: 'Open to Opportunities',
   title: 'Business Analyst & Product Owner',
   description:
-    'Building on 8+ years in PropTech to move into roles focused on requirements gathering, data analytics, product discovery, backlog prioritization, and measurable delivery outcomes.',
+    'Building on 9+ years in PropTech to move into roles focused on requirements gathering, data analytics, product discovery, backlog prioritization, and measurable delivery outcomes.',
   targetRoles: 'BA (Data Analytics) · Product Owner',
   domains: 'PropTech · SaaS · Digital Products',
   strengths: [
-    { value: '8+ yrs', label: 'Cross-functional experience' },
+    { value: '9+ yrs', label: 'Cross-functional experience' },
     { value: 'SQL', label: 'Dashboards & analytics' },
     { value: 'Agile', label: 'Jira & delivery' },
   ],
@@ -81,7 +81,7 @@ export const metricGroups = [
 export const about = {
   heading: 'From customer insights to business analysis and product ownership.',
   transitionFocus:
-    'Transitioning into Business Analyst (Data Analytics) and Product Owner roles, building on 8+ years of turning business problems into requirements, dashboards, and delivery outcomes.',
+    'Transitioning into Business Analyst (Data Analytics) and Product Owner roles, building on 9+ years of turning business problems into requirements, dashboards, and delivery outcomes.',
   paragraphs: [
     'Alfiya brings deep PropTech experience from Housing.com, Magicbricks, and Info Edge, with a track record of connecting customer behavior analysis, operational data, and stakeholder feedback to product and business decisions.',
     'Her work spans requirements gathering, SQL and dashboard development, Voice of Customer analysis, Agile delivery with Jira, QBR reporting, and cross-functional collaboration with Product, Engineering, Sales, Marketing, and Business teams.',
