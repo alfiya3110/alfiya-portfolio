@@ -24,7 +24,8 @@ export const profile = {
 };
 
 export const navLinks = [
-  { label: 'About', path: '/' },
+  { label: 'Home', path: '/' },
+  { label: 'About', path: '/about' },
   { label: 'Experience', path: '/experience' },
   { label: 'Impact', path: '/impact' },
   { label: 'Case Studies', path: '/projects' },

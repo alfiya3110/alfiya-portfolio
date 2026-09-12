@@ -43,12 +43,15 @@ export default function Hero() {
               ))}
             </div>
 
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
               <a href={resumeUrl} download className="home-btn-primary">
                 Download Resume
               </a>
+              <Link to="/about" className="home-btn-secondary">
+                About Me
+              </Link>
               <Link to="/projects" className="home-btn-secondary">
-                View Case Studies
+                Case Studies
               </Link>
             </div>
           </div>
