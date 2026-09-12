@@ -2,9 +2,30 @@ import { about } from '../data/profile';
 
 type AboutProps = {
   standalone?: boolean;
+  merged?: boolean;
 };
 
-export default function About({ standalone = false }: AboutProps) {
+export default function About({ standalone = false, merged = false }: AboutProps) {
+  if (merged) {
+    return (
+      <div className="space-y-6 text-lg leading-8 text-slate">
+        {about.paragraphs.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
+        <div className="flex flex-wrap gap-2 pt-2">
+          {about.industries.map((industry) => (
+            <span
+              key={industry}
+              className="rounded-full border border-teal/20 bg-teal/10 px-4 py-2 text-sm font-medium text-teal-dark"
+            >
+              {industry}
+            </span>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <section aria-labelledby={standalone ? undefined : 'about-heading'}>
       {!standalone && (

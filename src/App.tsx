@@ -1,6 +1,5 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
-import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import EducationPage from './pages/EducationPage';
 import ExperiencePage from './pages/ExperiencePage';
@@ -14,7 +13,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
-        <Route path="about" element={<AboutPage />} />
+        <Route path="about" element={<Navigate to="/" replace />} />
         <Route path="experience" element={<ExperiencePage />} />
         <Route path="impact" element={<ImpactPage />} />
         <Route path="projects" element={<ProjectsPage />} />
