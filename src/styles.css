@@ -71,39 +71,35 @@ a {
 }
 
 .home-badge {
-  @apply inline-flex items-center rounded-full border border-teal-light/40 bg-teal/15 px-4 py-1.5 text-xs font-medium text-teal-light;
-}
-
-.home-badge-muted {
-  @apply border-gold-light/25 bg-gold/10 text-gold-light;
+  @apply inline-flex items-center rounded-full border border-ivory/20 bg-ivory/5 px-4 py-1.5 text-xs font-medium text-ivory/80;
 }
 
 .home-skill-pill {
-  @apply rounded-lg border border-teal-light/25 bg-teal/10 px-3 py-1.5 text-xs font-medium text-teal-light backdrop-blur-sm;
+  @apply rounded-lg border border-ivory/15 bg-ivory/5 px-3 py-1.5 text-xs font-medium text-ivory/75;
 }
 
 .home-btn-primary {
-  @apply inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-teal to-teal-light px-7 py-3.5 text-sm font-bold text-navy shadow-lg shadow-teal/30 transition hover:from-teal-light hover:to-teal-light hover:shadow-teal/40 focus:outline-none focus:ring-2 focus:ring-gold-light focus:ring-offset-2 focus:ring-offset-navy;
+  @apply inline-flex items-center justify-center rounded-xl bg-ivory px-7 py-3.5 text-sm font-bold text-navy transition hover:bg-ivory/90 focus:outline-none focus:ring-2 focus:ring-ivory/50 focus:ring-offset-2 focus:ring-offset-navy;
 }
 
 .home-btn-secondary {
-  @apply inline-flex items-center justify-center rounded-xl border border-gold-light/40 bg-gold/10 px-7 py-3.5 text-sm font-semibold text-gold-light transition hover:border-gold-light hover:bg-gold/20 hover:text-ivory focus:outline-none focus:ring-2 focus:ring-gold-light focus:ring-offset-2 focus:ring-offset-navy;
+  @apply inline-flex items-center justify-center rounded-xl border border-ivory/30 bg-transparent px-7 py-3.5 text-sm font-semibold text-ivory transition hover:border-ivory/50 hover:bg-ivory/5 focus:outline-none focus:ring-2 focus:ring-ivory/40 focus:ring-offset-2 focus:ring-offset-navy;
 }
 
 .home-transition-card {
-  @apply rounded-3xl border border-teal/30 bg-gradient-to-br from-teal/15 via-gold/8 to-navy/90 p-7 shadow-2xl backdrop-blur-md sm:p-8;
+  @apply rounded-3xl border border-ivory/15 bg-ivory/[0.04] p-7 shadow-xl backdrop-blur-sm sm:p-8;
 }
 
 .home-transition-row {
-  @apply rounded-2xl border border-teal-light/15 bg-teal/5 px-4 py-3;
+  @apply rounded-2xl border border-ivory/10 bg-ivory/[0.03] px-4 py-3;
 }
 
 .home-transition-label {
-  @apply block text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-gold-light/80;
+  @apply block text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-ivory/55;
 }
 
 .home-transition-value {
-  @apply mt-1 block text-sm font-semibold text-ivory;
+  @apply mt-1 block text-sm font-semibold text-ivory/90;
 }
 
 .home-about-section {
