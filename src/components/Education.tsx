@@ -30,8 +30,10 @@ export default function Education({ standalone = false }: EducationProps) {
           <p className="section-kicker">Certifications</p>
           <div className="mt-4 space-y-4">
             {certifications.map((certification) => (
-              <article key={certification} className="card">
-                <p className="text-xl font-semibold text-navy">{certification}</p>
+              <article key={certification.name} className="card">
+                <h3 className="text-lg font-semibold text-navy">{certification.name}</h3>
+                <p className="mt-2 text-slate">{certification.issuer}</p>
+                <p className="mt-1 text-sm font-medium text-teal-dark">Issued {certification.issued}</p>
               </article>
             ))}
           </div>

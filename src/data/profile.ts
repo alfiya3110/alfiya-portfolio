@@ -268,8 +268,36 @@ export const education = [
 ];
 
 export const certifications = [
-  'Google Analytics Certification',
-  'Digital Marketing Certification - Udemy',
+  {
+    name: 'SQL for Data Analysis',
+    issuer: 'LinkedIn',
+    issued: 'Jul 2026',
+  },
+  {
+    name: 'Automate Your Workflows with Generative AI',
+    issuer: 'LinkedIn',
+    issued: 'Apr 2026',
+  },
+  {
+    name: 'AI Productivity Hacks to Reimagine Your Workday and Career',
+    issuer: 'LinkedIn',
+    issued: 'Mar 2026',
+  },
+  {
+    name: 'Artificial Intelligence for Marketing',
+    issuer: 'LinkedIn',
+    issued: 'Dec 2025',
+  },
+  {
+    name: 'SAP Emarsys Customer Engagement',
+    issuer: 'SAP Labs India',
+    issued: 'Jun 2023',
+  },
+  {
+    name: 'Digital Marketing Certification',
+    issuer: 'Udemy',
+    issued: 'Sep 2020',
+  },
 ];
 
 export const contact = {
