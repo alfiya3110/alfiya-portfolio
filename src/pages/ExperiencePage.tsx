@@ -1,4 +1,5 @@
 import Experience from '../components/Experience';
+import PageContent from '../components/PageContent';
 import PageHeader from '../components/PageHeader';
 
 export default function ExperiencePage() {
@@ -9,7 +10,9 @@ export default function ExperiencePage() {
         title="From quality operations to customer insights, SaaS growth, and product operations leadership."
         description="A chronological view of roles across Housing.com, Magicbricks, and Info Edge."
       />
-      <Experience standalone />
+      <PageContent>
+        <Experience standalone />
+      </PageContent>
     </main>
   );
 }

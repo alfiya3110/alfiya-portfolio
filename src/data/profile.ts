@@ -26,6 +26,7 @@ export const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
   { label: 'Experience', path: '/experience' },
+  { label: 'Impact', path: '/impact' },
   { label: 'Projects', path: '/projects' },
   { label: 'Skills', path: '/skills' },
   { label: 'Education', path: '/education' },

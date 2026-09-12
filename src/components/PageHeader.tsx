@@ -2,21 +2,18 @@ type PageHeaderProps = {
   kicker: string;
   title: string;
   description?: string;
-  dark?: boolean;
 };
 
-export default function PageHeader({ kicker, title, description, dark = false }: PageHeaderProps) {
+export default function PageHeader({ kicker, title, description }: PageHeaderProps) {
   return (
-    <header
-      className={`px-6 py-16 sm:px-10 lg:px-12 ${dark ? 'bg-navy text-ivory' : 'bg-cream'}`}
-    >
-      <div className="mx-auto max-w-7xl">
-        <p className={`section-kicker ${dark ? 'text-teal-light' : ''}`}>{kicker}</p>
-        <h1 className={`section-heading ${dark ? 'text-ivory' : ''}`}>{title}</h1>
+    <header className="page-header relative overflow-hidden border-b border-ivory/10 bg-navy text-ivory">
+      <div className="hero-mesh pointer-events-none absolute inset-0" aria-hidden="true" />
+      <div className="hero-glow pointer-events-none absolute -top-16 right-0 h-64 w-64 rounded-full bg-teal/15 blur-3xl" aria-hidden="true" />
+      <div className="relative mx-auto max-w-7xl px-6 py-14 sm:px-10 sm:py-16 lg:px-12">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-teal-light">{kicker}</p>
+        <h1 className="max-w-4xl text-3xl font-bold tracking-tight text-balance sm:text-4xl lg:text-5xl">{title}</h1>
         {description && (
-          <p className={`mt-6 max-w-3xl text-lg leading-8 ${dark ? 'text-ivory/75' : 'text-slate'}`}>
-            {description}
-          </p>
+          <p className="mt-5 max-w-3xl text-base leading-7 text-ivory/65 sm:text-lg">{description}</p>
         )}
       </div>
     </header>

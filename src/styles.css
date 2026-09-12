@@ -41,13 +41,14 @@ a {
 }
 
 .card {
-  @apply rounded-[1.5rem] border border-navy/10 bg-white/55 p-6 shadow-sm shadow-navy/5;
+  @apply rounded-2xl border border-navy/10 bg-white p-6 shadow-sm shadow-navy/5;
 }
 
-.contact-link {
-  @apply rounded-2xl border border-ivory/15 bg-ivory/8 px-5 py-4 text-center font-semibold text-ivory transition hover:border-teal-light hover:text-teal-light focus:outline-none focus:ring-2 focus:ring-teal-light focus:ring-offset-2 focus:ring-offset-navy;
+.contact-card {
+  @apply rounded-2xl border border-navy/10 bg-white px-5 py-4 text-center font-semibold text-navy shadow-sm shadow-navy/5 transition hover:border-teal hover:text-teal-dark focus:outline-none focus:ring-2 focus:ring-teal focus:ring-offset-2 focus:ring-offset-ivory;
 }
 
+.page-header,
 .hero-section {
   background: linear-gradient(165deg, #0d1b2a 0%, #0f2235 45%, #0d1b2a 100%);
 }
