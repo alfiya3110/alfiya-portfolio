@@ -22,9 +22,9 @@ export default function Hero() {
         <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-start lg:gap-16">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-teal-light/70">Portfolio</p>
-            <h1 className="mt-4 text-[clamp(3rem,9vw,6rem)] font-bold leading-[0.92] tracking-tight">
-              {profile.name.split(' ')[0]}
-              <span className="block text-teal-light">{profile.name.split(' ').slice(1).join(' ')}</span>
+            <h1 className="mt-4 text-[clamp(2.25rem,6vw,5rem)] font-bold leading-tight tracking-tight">
+              {profile.name.split(' ')[0]}{' '}
+              <span className="text-teal-light">{profile.name.split(' ').slice(1).join(' ')}</span>
             </h1>
 
             <p className="mt-8 max-w-2xl text-2xl font-light leading-snug text-ivory/90 sm:text-[1.75rem]">
