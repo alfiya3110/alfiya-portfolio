@@ -6,9 +6,9 @@ export default function ProjectsPage() {
   return (
     <main>
       <PageHeader
-        kicker="Featured Projects"
-        title="Practical AI concepts for converting customer conversations into operating intelligence."
-        description="Selected AI and Voice of Customer initiatives that connect customer signals to product and growth outcomes."
+        kicker="Case Studies"
+        title="Business analysis and product discovery work that connects data, requirements, and outcomes."
+        description="Selected case studies demonstrating requirements gathering, analytics, product prioritization, and measurable business impact."
       />
       <PageContent>
         <Projects standalone />

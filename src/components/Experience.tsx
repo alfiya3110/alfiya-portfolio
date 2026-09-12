@@ -14,7 +14,7 @@ export default function Experience({ standalone = false }: ExperienceProps) {
         <>
           <p className="section-kicker">Experience</p>
           <h2 id="timeline-heading" className="section-heading mb-12 max-w-3xl">
-            From quality operations to customer insights, SaaS growth, and product operations leadership.
+            From reporting and quality operations to business analysis, analytics, and product delivery leadership.
           </h2>
         </>
       )}
@@ -28,6 +28,9 @@ export default function Experience({ standalone = false }: ExperienceProps) {
             <div>
               <h3 className="text-2xl font-semibold text-navy">{item.role}</h3>
               <p className="mt-1 font-medium text-teal-dark">{item.company}</p>
+              {'summary' in item && item.summary && (
+                <p className="mt-3 text-sm italic leading-6 text-slate">{item.summary}</p>
+              )}
               <ul className="mt-5 space-y-3 text-slate">
                 {item.points.map((point) => (
                   <li key={point} className="flex gap-3">

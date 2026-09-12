@@ -9,6 +9,9 @@ export default function About({ standalone = false, merged = false }: AboutProps
   if (merged) {
     return (
       <div className="space-y-6 text-lg leading-8 text-slate">
+        <p className="rounded-2xl border border-teal/20 bg-teal/5 px-5 py-4 text-base font-medium text-teal-dark">
+          {about.transitionFocus}
+        </p>
         {about.paragraphs.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
         ))}
@@ -35,6 +38,9 @@ export default function About({ standalone = false, merged = false }: AboutProps
         </div>
       )}
       <div className="space-y-6 text-lg leading-8 text-slate">
+        <p className="rounded-2xl border border-teal/20 bg-teal/5 px-5 py-4 text-base font-medium text-teal-dark">
+          {about.transitionFocus}
+        </p>
         {about.paragraphs.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
         ))}

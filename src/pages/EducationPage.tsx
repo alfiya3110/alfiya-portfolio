@@ -8,7 +8,7 @@ export default function EducationPage() {
       <PageHeader
         kicker="Education"
         title="Academic foundation and continuous learning."
-        description="Formal education and certifications that support Alfiya's work in customer insights and product operations."
+        description="Formal education and certifications that support Alfiya's transition into Business Analyst and Product Owner roles."
       />
       <PageContent>
         <Education standalone />

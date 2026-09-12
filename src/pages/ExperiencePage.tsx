@@ -7,8 +7,8 @@ export default function ExperiencePage() {
     <main>
       <PageHeader
         kicker="Experience"
-        title="From quality operations to customer insights, SaaS growth, and product operations leadership."
-        description="A chronological view of roles across Housing.com, Magicbricks, and Info Edge."
+        title="From reporting and quality operations to business analysis, analytics, and product delivery leadership."
+        description="Roles across Housing.com, Magicbricks, and Info Edge reframed through business analysis, data analytics, and product ownership outcomes."
       />
       <PageContent>
         <Experience standalone />

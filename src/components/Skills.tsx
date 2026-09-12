@@ -13,9 +13,9 @@ export default function Skills({ standalone = false }: SkillsProps) {
       {!standalone && (
         <div className="mb-10">
           <p className="section-kicker">Skills</p>
-          <h2 id="skills-heading" className="section-heading">
-            A toolkit spanning insight, execution, SaaS operations, and business growth.
-          </h2>
+            <h2 id="skills-heading" className="section-heading">
+              Business analysis, data analytics, and product ownership capabilities.
+            </h2>
         </div>
       )}
       <div className="grid gap-5 sm:grid-cols-2">

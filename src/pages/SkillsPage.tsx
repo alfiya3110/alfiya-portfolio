@@ -7,8 +7,8 @@ export default function SkillsPage() {
     <main>
       <PageHeader
         kicker="Skills"
-        title="A toolkit spanning insight, execution, SaaS operations, and business growth."
-        description="Core capabilities across product delivery, customer success, analytics, and platform tools."
+        title="Business analysis, data analytics, and product ownership capabilities."
+        description="Skills aligned to Business Analyst (Data Analytics) and Product Owner roles across PropTech and SaaS environments."
       />
       <PageContent>
         <Skills standalone />
